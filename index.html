@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Faridkii</title>
+
+  <!-- CSS External -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-gray-800 scroll-smooth">
+   <!-- Header -->
+  <header class="main-header fixed top-0 left-0 w-full bg-white shadow-md z-50">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Logo + Nama -->
+    <div class="flex items-center space-x-3">
+      <!-- Foto profil -->
+      <img src="16.jpg" alt="Profile"
+        class="w-12 h-12 rounded-full object-cover shadow-md">
+      <span class="text-lg font-bold text-blue-600">Fridzkiii</span>
+    </div>
+
+      <!-- Navbar -->
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a class="px-4 py-2 rounded hover:bg-blue-500 hover:text-white" href="#home">Home</a></li>
+          <li><a class="px-4 py-2 rounded hover:bg-blue-500 hover:text-white" href="#profile">Our Profile</a></li>
+          <li><a class="px-4 py-2 rounded hover:bg-blue-500 hover:text-white" href="#portfolio">Portfolio</a></li>
+          <li><a class="px-4 py-2 rounded hover:bg-blue-500 hover:text-white" href="#message-us">Message Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="pt-20">
+    <!-- Home -->
+    <section id="home"
+      class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center">
+      <h1 class="text-5xl font-extrabold mb-4">Welcome <span id="welcome-user"
+          class="text-yellow-300">User</span>!</h1>
+      <p class="text-lg">This is my personal portfolio website</p>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-6">
+      <h2 class="text-4xl font-semibold mb-4">Our Profile</h2>
+      <p class="max-w-2xl text-center text-gray-600">Hi, I'm Yama Roni. A passionate web developer with a focus on
+        building clean and modern designs, interactive websites, and user-friendly interfaces.</p>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="min-h-screen flex flex-col items-center justify-center px-6">
+      <h2 class="text-4xl font-semibold mb-8">Portfolio</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full">
+          <div class="p-4">
+            <h3 class="font-bold">Project 1</h3>
+            <p class="text-sm text-gray-500">Description of project 1...</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full">
+          <div class="p-4">
+            <h3 class="font-bold">Project 2</h3>
+            <p class="text-sm text-gray-500">Description of project 2...</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full">
+          <div class="p-4">
+            <h3 class="font-bold">Project 3</h3>
+            <p class="text-sm text-gray-500">Description of project 3...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Us -->
+    <section id="message-us" class="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-6">
+      <h2 class="text-4xl font-semibold mb-6">Message Us</h2>
+      <form class="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg space-y-4">
+        <div>
+          <label for="name" class="block mb-2 font-medium">Name:</label>
+          <input type="text" id="name" name="name"
+            class="border p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-medium">Email:</label>
+          <input type="email" id="email" name="email"
+            class="border p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-medium">Message:</label>
+          <textarea id="message" name="message" rows="4"
+            class="border p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+        <button type="button" onclick="validateForm();"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white text-center p-4">
+    &copy; 2025 Yama Roni. All rights reserved.
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
