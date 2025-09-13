@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Fridzkiii</title>
-
-  <!-- Tailwind CDN -->
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body class="font-sans text-gray-800 scroll-smooth">
-
-  <!-- HEADER -->
   <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-    <div class="container mx-auto flex items-center justify-between p-4">
-      
-      <!-- Foto + Nama -->
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
       <div class="flex items-center space-x-3">
-        <img src="https://via.placeholder.com/80" alt="Profile"
-          class="w-12 h-12 rounded-full object-cover shadow-md">
+        <img src="gambar/pp.jpg" alt="Profile"
+          class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover shadow-md">
         <span class="text-lg font-bold text-blue-600">Fridzkiii</span>
-      </div>
+      </div> 
 
-      <!-- Navbar (Desktop) -->
       <nav class="hidden md:block">
         <ul class="flex space-x-6">
           <li><a class="px-2 py-1 hover:text-blue-500" href="#home">Home</a></li>
@@ -32,14 +24,8 @@
           <li><a class="px-2 py-1 hover:text-blue-500" href="#message-us">Message Us</a></li>
         </ul>
       </nav>
-
-      <!-- Hamburger Button (Mobile) -->
-      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-        ☰
-      </button>
+      <button id="menu-btn" class="md:hidden text-2xl text-gray-700 focus:outline-none">☰</button>
     </div>
-
-    <!-- Navbar (Mobile Dropdown) -->
     <nav id="menu" class="hidden md:hidden bg-gray-100">
       <ul class="flex flex-col items-center space-y-3 py-4">
         <li><a class="hover:text-blue-500" href="#home">Home</a></li>
@@ -49,92 +35,95 @@
       </ul>
     </nav>
   </header>
-
-  <!-- MAIN CONTENT -->
   <main class="pt-24">
-    <!-- Home -->
     <section id="home"
       class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center px-4">
-      <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Welcome <span class="text-yellow-300">User</span>!</h1>
-      <p class="text-lg">This is my personal portfolio website</p>
+      <h1 class="text-3xl sm:text-5xl font-extrabold mb-4">Welcome <span class="text-yellow-300">User</span>!</h1>
+      <p class="text-base sm:text-lg">This is my personal portfolio website</p>
     </section>
-
-    <!-- Profile -->
-    <section id="profile" class="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-6 text-center">
-      <h2 class="text-3xl sm:text-4xl font-semibold mb-6">Our Profile</h2>
-      <img src="https://via.placeholder.com/200" alt="Profile Photo"
-        class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-lg mb-4">
-      <p class="max-w-2xl text-gray-600">Hi, I'm Fridzkiii. A passionate web developer with a focus on
-        building clean and modern designs, interactive websites, and user-friendly interfaces.</p>
+    <section id="profile" class="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4 text-center">
+      <h2 class="text-2xl sm:text-4xl font-semibold mb-6">Our Profile</h2>
+      <img src="gambar/me.jpg" alt="Profile Photo"
+        class="w-28 h-28 sm:w-40 sm:h-40 rounded-full object-cover shadow-lg mb-4">
+      <p class="max-w-2xl text-gray-600 text-sm sm:text-base leading-relaxed">
+        Hi, I'm Farid. A vocational high school student majoring in Computer Networking (TJKT) and currently studying coding. 
+        I enjoy creating websites, learning new programming languages, and building something useful. Although I'm still learning, 
+        I'm committed to continuous improvement.
+      </p>
     </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="min-h-screen flex flex-col items-center justify-center px-6">
-      <h2 class="text-3xl sm:text-4xl font-semibold mb-8">Portfolio</h2>
+    <section id="portfolio" class="min-h-screen flex flex-col items-center justify-center px-4">
+      <h2 class="text-2xl sm:text-4xl font-semibold mb-8">Portfolio</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
+        
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full">
+          <img src="gambar/profil.png" alt="Project 1" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h3 class="font-bold">Project 1</h3>
-            <p class="text-sm text-gray-500">Description of project 1...</p>
+            <h3 class="font-bold">Website Profil Saya</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">Hello! I'm Farid, an active vocational high school student who enjoys 
+              sports like futsal and spending time playing online games. I also enjoy learning new things, socializing, and staying calm 
+              in any situation.</p>
           </div>
         </div>
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full">
+          <img src="gambar/Podo.png" alt="Project 2" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h3 class="font-bold">Project 2</h3>
-            <p class="text-sm text-gray-500">Description of project 2...</p>
+            <h3 class="font-bold">Pomodoro Website</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">Pomodoro Timer is a simple app that helps you manage your study or work 
+              time using the Pomodoro technique. It features Work (25 min) and Break modes, with Start and Reset buttons.</p>
           </div>
         </div>
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full">
+          <img src="gambar/ultah.png" alt="Project 3" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h3 class="font-bold">Project 3</h3>
-            <p class="text-sm text-gray-500">Description of project 3...</p>
+            <h3 class="font-bold">Websites Ulang Tahun</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">This birthday greeting website provides a unique and personalized surprise. 
+              It features interactive buttons for photos, videos, messages, music, and surprises.</p>
           </div>
         </div>
       </div>
     </section>
+    <section id="message-us" class="py-16 px-6 bg-white">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-10 text-indigo-700">Message Us</h2>
+        <div class="grid md:grid-cols-2 gap-10">
 
-    <!-- Message Us -->
-    <section id="message-us" class="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-6">
-      <h2 class="text-3xl sm:text-4xl font-semibold mb-6">Message Us</h2>
-      <form class="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg space-y-4">
-        <div>
-          <label for="name" class="block mb-2 font-medium">Name:</label>
-          <input type="text" id="name" name="name"
-            class="border p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <form id="contact-form" class="bg-indigo-50 p-6 rounded-lg shadow">
+            <div class="mb-4">
+              <label for="name" class="block mb-2 font-semibold">Nama:</label>
+              <input type="text" id="name" class="border p-2 w-full rounded">
+            </div>
+            <div class="mb-4">
+              <label for="dob" class="block mb-2 font-semibold">Tanggal Lahir:</label>
+              <input type="date" id="dob" class="border p-2 w-full rounded">
+            </div>
+            <div class="mb-4">
+              <label class="block mb-2 font-semibold">Jenis Kelamin:</label>
+              <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+              <input type="radio" name="gender" value="Perempuan" class="ml-4"> Perempuan
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block mb-2 font-semibold">Pesan:</label>
+              <textarea id="message" class="border p-2 w-full rounded" rows="4"></textarea>
+            </div>
+            <button type="button" onclick="validateForm();" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded">
+              Submit
+            </button>
+          </form>
+
+          <div id="output" class="bg-indigo-50 p-6 rounded-lg shadow">
+            <p><strong>Current time:</strong> <span id="current-time">-</span></p>
+            <p><strong>Nama:</strong> <span id="out-name">-</span></p>
+            <p><strong>Tanggal Lahir:</strong> <span id="out-dob">-</span></p>
+            <p><strong>Jenis Kelamin:</strong> <span id="out-gender">-</span></p>
+            <p><strong>Pesan:</strong> <span id="out-message">-</span></p>
+          </div>
         </div>
-        <div>
-          <label for="email" class="block mb-2 font-medium">Email:</label>
-          <input type="email" id="email" name="email"
-            class="border p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
-        </div>
-        <div>
-          <label for="message" class="block mb-2 font-medium">Message:</label>
-          <textarea id="message" name="message" rows="4"
-            class="border p-2 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
-        </div>
-        <button type="button" onclick="validateForm();"
-          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send Message</button>
-      </form>
-    </section>
+      </div>
+    </section>
   </main>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-800 text-white text-center p-4">
+  <footer class="bg-gray-800 text-white text-center p-4 text-sm">
     &copy; 2025 Fridzkiii. All rights reserved.
   </footer>
-
-  <!-- SCRIPT -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-
-    menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
