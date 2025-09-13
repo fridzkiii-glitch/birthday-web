@@ -1,31 +1,29 @@
-welcomeMessage();
-
-// Function to prompt user for their name and display it
+document.getElementById("menu-btn").addEventListener("click", function () {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("hidden");
+});
 function welcomeMessage() {
-    // Prompt the user for their name
-    let username = prompt("Please enter your name:");
-
-    // If a name was entered, display it in the welcome message
-    if (username) {
-        document.getElementById('welcome-user').innerText = username;
-    }
+  let username = prompt("Masukkan nama Anda:");
+  if (username) {
+    document.getElementById("welcome-user").innerText = username;
+  }
 }
-
-// Form validation function
 function validateForm() {
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
+  let name = document.getElementById("name").value;
+  let dob = document.getElementById("dob").value;
+  let gender = document.querySelector('input[name="gender"]:checked');
+  let message = document.getElementById("message").value;
+  if (name === "" || dob === "" || !gender || message === "") {
+    alert("Semua field harus diisi!");
+    return;
+  }
+  document.getElementById("out-name").innerText = name;
+  document.getElementById("out-dob").innerText = dob;
+  document.getElementById("out-gender").innerText = gender.value;
+  document.getElementById("out-message").innerText = message;
 
-    // Simple validation
-    if (name === "" || email === "" || message === "") {
-        // Show an alert if any field is empty
-        alert("All fields must be filled out");
-    } else {
-        alert("Form submitted successfully! Thank you, " + name + "!");
-        // Optionally, you can clear the form here
-        document.getElementById('name').value = "";
-        document.getElementById('email').value = "";
-        document.getElementById('message').value = "";
-    }
+  let now = new Date();
+  document.getElementById("current-time").innerText = now.toString();
+  alert("Form berhasil dikirim!");
+  document.getElementById("contact-form").reset();
 }
